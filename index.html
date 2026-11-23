@@ -105,6 +105,12 @@
     body.english .block-en{display:block}
     body.english .inline-en{display:inline}
     /* Keep English headings and descriptions on separate lines in sections 02 and 04. */
+    /* About Me: preserve block flow for English heading and supporting copy. */
+    body.english #about .section-head h2.en,
+    body.english #about .section-head p.en,
+    body.english #about .about-copy p.en,
+    body.english #about .workflow-panel h3.en,
+    body.english #about .workflow-industries.en{display:block}
     body.english #skills .section-head h2.en,
     body.english #skills .section-head p.en,
     body.english #skills .skill h3.en,
