@@ -104,6 +104,16 @@
     body.english .en{display:initial}
     body.english .block-en{display:block}
     body.english .inline-en{display:inline}
+    /* Keep English headings and descriptions on separate lines in sections 02 and 04. */
+    body.english #skills .section-head h2.en,
+    body.english #skills .section-head p.en,
+    body.english #skills .skill h3.en,
+    body.english #skills .skill p.en,
+    body.english #projects .section-head h2.en,
+    body.english #projects .section-head p.en,
+    body.english #projects .project h3.en,
+    body.english #projects .project p.en{display:block}
+
     .block-en{display:none}
     @media(max-width:800px){
       .navlinks{display:none}.hero-inner{grid-template-columns:1fr;gap:35px;min-height:auto;padding-top:80px;padding-bottom:70px}
