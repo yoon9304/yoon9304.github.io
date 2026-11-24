@@ -329,6 +329,11 @@ body.english .tool-group h4.en{display:block}
 #skills[data-active-tool="ai"] .ai-related-tool{transform:translateY(-5px) scale(1.025);border-color:#4387d5;box-shadow:0 0 0 2px #4387d533,0 12px 24px #173a7229;z-index:2}
 @media(max-width:1000px){#skills .skill-grid{grid-template-columns:repeat(7,minmax(145px,1fr));overflow-x:auto}}
 @media(prefers-reduced-motion:reduce){#skills[data-active-tool="ai"] .skill[data-related="ai"],#skills[data-active-tool="ai"] .ai-related-tool{transform:none;transition:none}}
+
+/* Keep adjacent AI cards separated during linked emphasis */
+#skills .tool-grid:has(>.ai-related-tool){gap:14px}
+#skills[data-active-tool="ai"] .ai-related-tool{transform:translateY(-5px);box-shadow:0 0 0 2px #4387d533,0 8px 16px #173a7224}
+@media(prefers-reduced-motion:reduce){#skills[data-active-tool="ai"] .ai-related-tool{transform:none}}
 </style>
 </head>
 <body>
